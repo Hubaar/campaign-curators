@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Brine Mother</title>
+<style>
+body {
+  background-image: url('ParchmentBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Georgia, serif;
+  color: #2c1f0c;
+  padding: 2rem;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border: 2px solid #5e3e23;
+  border-radius: 1rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.portrait {
+  display: block;
+  margin: 0 auto 1rem auto;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.portrait-fallback {
+  display: none;
+  margin: 0 auto 1rem auto;
+  max-width: 700px;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 2px dashed #5e3e23;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.back-button {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+  padding: 0.7rem 1.5rem;
+  background-color: #5e3e23;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+.footer img {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>The Brine Mother</h1>
+
+  <!-- Portrait (safe even before the PNG exists) -->
+  <img
+    src="BrineMotherAtTable.png"
+    alt="The Brine Mother Portrait"
+    class="portrait"
+    onerror="this.style.display='none'; document.getElementById('brineFallback').style.display='block';"
+  >
+  <div id="brineFallback" class="portrait-fallback">
+    Portrait pending — the sea does not reveal her face to mortals on demand.
+  </div>
+
+  <div class="description">
+    <p>
+      The Brine Mother — Keeper of the Drowned Ledgers — was old when the first sailor learned to bargain with the tide.
+      She does not hunt with malice. She collects, the way the sea collects: patiently, inevitably, without apology.
+    </p>
+
+    <p>
+      Mortals call it greed when the ocean takes what was promised, when storms reclaim a gilded hull, when a captain’s
+      boldness sinks under the weight of his own confidence. The Brine Mother calls it balance. Every debt has a depth.
+      Every oath has a price. And she remembers them all.
+    </p>
+
+    <p>
+      As a Curator, she runs high-seas adventures steeped in salt, superstition, and consequence — where treasure glitters,
+      loyalties rot, and the horizon always hides another choice. She speaks in island cadence when it pleases her, and
+      in the ancient language beneath the waves when it doesn’t.
+    </p>
+
+    <p>
+      Bring her your daring. Bring her your fear. Bring her your secrets wrapped in rope and wax.
+      She will take only what you owe — and perhaps a little more, if you pretend you don’t.
+    </p>
+  </div>
+
+  <a class="back-button" href="pantheon_web_pages.html">Return to the Pantheon</a>
+
+  <div class="footer">
+    <img src="CopyRight footer.png" alt="Copyright">
+  </div>
+</div>
+</body>
+</html>
